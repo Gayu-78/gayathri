@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SKYWAY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.o">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#site{
+    width:100%;
+}
+.head{
+    width: 100%;
+    height: 120px;
+    background-color: #304849;
+}
+.head .logo img{
+    width: 15%;
+    height: 176px;
+    margin-left: 20px;
+    margin-top: -14px;
+}
+.callsearch {
+  margin-left: 672px;
+  margin-top: -127px;
+}
+.callsearch i { 
+  color:rgb(193, 193, 238);  
+  font-size: 34px; 
+}
+.callsearch i:hover{
+  color:rgb(21, 20, 20);
+}
+.callsearch h3{
+  padding-left: 6px;
+  display: inline-block;
+  padding-top: -60px;
+  color:aliceblue;
+}
+.callsearch h3:hover{
+  color:rgb(16, 15, 15);
+}
+.search{
+  float:right;
+  margin-right: 60px;
+  display: block;
+  margin-top: -45px;
+}
+.search button{
+  padding:7px;
+}
+.search .text {
+  padding: 7px;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  line-height: 30px;
+  text-align: center;
+  list-style-type: none;
+  background-color: rgb(13, 14, 14);
+}
+.navbar ul{
+  list-style-type:none;
+}
+.navbar ul li{
+  display: inline-block;
+  position: relative;
+}
+.navbar ul li a{
+  display: block;
+  color:whitesmoke;
+  text-decoration: none;
+  padding:20px 35px;
+  font-size: 20px;
+  border-radius: 18px;
+  font-weight: bold;
+}
+ul li .menu1 li{
+  display: block;
+}
+ul li .menu1{
+  width:300px;
+  background-color:rgb(102, 75, 75);
+  position: absolute;
+  display: none;
+}
+ul li a:hover{
+  color:rgb(6, 6, 6);
+  background-color:darkgrey;
+}
+ul li:hover .menu1{
+  display: block;
+  color:antiquewhite;
+  background-color:rgb(46, 41, 41);
+}
+ul li .menu2 li{
+  display: block;
+}
+ul li .menu2{
+  width:300px;
+  background-color:grey;
+  position: absolute;
+  display: none;
+}
+ a:hover{
+  color:black;
+  background-color:darkgrey;
+}
+ul li:hover .menu2{
+  display: block;
+  color:antiquewhite;
+  background-color:rgb(46, 41, 41);
+}
+ul li .menu3 li{
+  display: block;
+}
+ul li .menu3{
+  width:300px;
+  background-color:grey;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+ a:hover{
+  color:black;
+  background-color:rgba(250, 247, 247, 0.268);
+}
+ul li:hover .menu3{
+  display: block;
+  color:rgb(46, 41, 41);
+  background-color:rgb(46, 41, 41);
+}
+ul li .menu4 li{
+  display: block;
+}
+ul li .menu4{
+  width:300px;
+  background-color:grey;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+ a:hover{
+  color:rgba(33, 31, 31, 0.159);
+  background-color:rgb(247, 247, 247);
+}
+ul li:hover .menu4{
+  display: block;
+  color:antiquewhite;
+  background-color:rgb(46, 41, 41);
+}
+.navbar li button{
+  border:none;
+  padding:8px;
+  margin-top:8px;
+  margin-left: 60px;
+  border-radius:30px;
+  font-weight: bold;
+  background-color: bisque;
+}
+.navbar li button:hover{
+  background-color: rgb(227, 120, 21);
+  color:rgb(236, 236, 245);
+}
+.img img{
+  width:100%;
+  height:700px;
+  background-image: cover;
+}
+.para{
+  width:31%;
+  margin-left: 662px;
+  margin-top: -401px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(35 26 98 / 85%);
+  color:rgb(244, 244, 247);
+  position:absolute;
+} 
+.para h2{
+  padding-bottom: 10px;
+}
+.rs{
+  width:16%;
+  background-color: rgb(23 78 81 / 70%);
+  color:whitesmoke;
+  margin-left: 662px;
+  margin-top: -265px;
+  position:absolute;
+}
+.rs p{
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.form{
+    width: 76%;
+    height: 90px;
+    margin-left: 184px;
+    margin-top: -94px;
+    position: absolute;
+}
+.form fieldset{
+  border:solid black 5px;
+  padding:15px;
+  margin-top: -39px;
+  font-size: 22px;
+  color: rgb(24, 24, 29);
+  background-color: #e9ddccb6;
+}
+.form legend{
+  font-size: 24px;
+  font-weight: bolder;
+  color: darkblue;
+  background-color: white;
+}
+form .sub{
+  background-color: red;
+  color: whitesmoke;
+  padding: 10px;
+  font-weight: bold;
+  float: right;
+}
+form button{
+  font-size:18px;
+}
+.about{
+  width:100%;
+  height:1000px;
+  margin-top: -4px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+.about h1{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 30px;
+    color: darkgreen;
+}
+.about h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 30px;
+    color: darkgreen;
+}
+.about h1:hover{
+  color:rgb(14, 14, 96);
+  text-decoration: underline 6px;
+}
+.about h2:hover{
+  color:rgb(14, 14, 96);
+  text-decoration: underline 6px;
+}
+.row{
+  padding-top:30px;
+}
+.row .col1-4 img{
+    width:25%;
+    height: 300px;
+    margin-left: 90px;
+    border: solid black 3px;
+    float:left;
+    filter: drop-shadow(10px 12px 6px black);
+}
+.row .col1-4 img:hover{
+  border: #03060f;
+}
+.row .col2-4 img{
+    width:25%;
+    height: 300px;
+    margin-left: 105px; 
+    border: solid black 3px;
+    float:center;
+    filter: drop-shadow(10px 12px 6px black);
+}
+.row .col2-4 img:hover{
+  border: #24262b;
+}
+.row .col3-4 img{
+    width: 25%;
+    height: 300px;
+    margin-right: 84px;
+    margin-top: -303px;
+    border: solid black 3px;
+    float: right;
+    filter: drop-shadow(10px 12px 6px black);
+}
+.row .col3-4 img:hover{
+  border: #24262b;
+}
+.row1 .col4-6 img{
+    width: 35%;
+    height: 300px;
+    margin-top: 39px;
+    margin-left: 158px;
+    border: solid black 4px;
+    filter: drop-shadow(10px 12px 6px black);
+}
+.row1 .col4-6 img:hover{
+  border:#24262b;
+}
+.row1 .col5-6 img{
+  width: 35%;
+  height: 300px;
+  float: right;
+  margin-right: 133px;
+  margin-top: -305px;
+  border: solid black 4px;
+  filter: drop-shadow(10px 12px 6px black);
+}
+.row1 .col5-6 img:hover{
+  border:#24262b;
+}
+.row1 img{
+   width:30%;
+   height: 200px;
+}
+.para1 p{
+  width: 22%;
+  height: 48px;
+  background-color: rgb(6, 12, 17);
+  color: #eef1f7;
+  position: absolute;
+  margin-top: 253px;
+  margin-left: 113px;
+  padding: 10px;
+  font-size: 20px;
+}
+.para2 p{
+  width: 23%;
+  height: 48px;
+  background-color: rgb(6, 12, 17);
+  color: #eef1f7;
+  position: absolute;
+  margin-top: -52px;
+  margin-left: 590px;
+  padding: 14px;
+  font-size: 20px;
+}
+.para3 p{
+  width: 22%;
+  height: 48px;
+  background-color: rgb(6, 12, 17);
+  color: #eef1f7;
+  position: absolute;
+  margin-top: -51px;
+  margin-left: 1078px;
+  padding: 10px;
+  font-size: 20px;
+}
+.para1 button{
+  margin-left: 74px;
+  font-size: 15px;
+}
+.para2 button{
+  margin-left: 120px;
+  font-size: 15px;
+}
+.para3 button{
+  margin-left: 144px;
+  font-size: 15px;
+}
+.abtext{
+  background-color:#102549;
+  color:white;
+  height: 91px;
+  margin-top: 44px;
+}
+.abtext p{
+  margin-left: 20px;
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.abtext p:hover{
+  color:rgb(10, 186, 250);
+}
+.abtext span{
+  font-weight: bolder;
+  border:solid white;  
+  padding: 13px; 
+  margin-left: 10px;
+  margin-right: 15px; 
+  font-size: 20px;
+}
+.abtext span:hover{
+  background-color: white;
+  color:#102549;
+}
+.footer{
+  width:100%;
+  height:400px;
+  background-color:#304849;
+}
+.footer .row1{
+  color: white;
+  padding-top: 30px;
+  padding-left: 43px;
+  font-size: 26px;
+  line-height: 40px;
+}
+.footer .row2{
+  margin-left: 406px;
+  margin-top: -206px;
+  color: white;
+  font-size: 26px;
+  line-height: 40px;
+}
+.footer .row3{
+  margin-left: 728px;
+  margin-top: -126px;
+  color: white;
+  font-size: 26px;
+  line-height: 40px;
+}
+.footer .row3:hover{
+  color:black;
+}
+.footer .row3 a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  text-align: center;
+  border-radius: 50%;
+  color:  #ffffff;
+}
+.footer .row3 a:hover{
+  color: #24262b;
+  background-color:#ffffff;
+}
+.footer .row4 {
+  float: right;
+  margin-right: 106px;
+  font-size: 26px;
+  color: white;
+  margin-top: -75px;
+}
+.footer .row4:hover{
+  color:rgb(236, 107, 26);
+}
+.footer .but{
+  float: right;
+}
+.footer .b1{
+  font-size: 25px;
+}
+.footer .button{
+  font-size: 16px;
+  padding:8px;
+  margin-right:30px;
+  color:white;
+  background-color: rgb(200, 94, 67);
+}
+.footer button:hover{
+  color:black;
+  background-color:white;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+a:hover{
+  background-color:#304849;
+  color:#03060f
+}
+</style>
+<body>
+<div id="site">
+  <div class="head">
+      <div class="logo">
+          <img src="logot.png" alt="image not found">
+      </div>
+       <div class="callsearch">
+          <!-- <i class="fa fa-phone"> </i> -->
+          <i class='fas'>&#xf1e4;</i>
+          <h3>reach us 24/7<br>    
+            <strong>+99 (33) 2345 6789</strong></h3>
+       </div>
+      <div class="search">
+       <input type="text" class="text" placeholder="Search entire website here">
+       <button>   
+       <i class="fa fa-search"></i>
+        </button>
+      </div>
+  </div>
+   <div class="navbar">
+    <ul>
+      <li><a href="#">Hotels</a>
+      <ul class="menu1"> 
+      <li><a href="#">Hotels in India</a></li>
+      <li><a href="#">International Hotels</a></li>
+      <li><a href="#">International Hostels</a></li>
+      <li><a href="#">Popular Hotels in Europe</a></li>
+      <li><a href="#">Activities</a></li>
+      <li><a href="#">Hotel Deals of the Week</a></li>
+      </ul>
+      </li>
+      <li><a href="#">Flights</a>
+        <ul class="menu2"> 
+          <li><a href="#">IndiGo</a></li>
+          <li><a href="#">Air India</a></li>
+          <li><a href="#">Air India Express</a></li>
+          <li><a href="#">Go First</a></li>
+          <li><a href="#">SpiceJet</a></li>
+          <li><a href="#">GoAir</a></li>
+          <li><a href="#">TruJet</a></li>
+          </ul>
+          </li>
+      <li><a href="#">Vaccation</a>
+        <ul class="menu3"> 
+          <li><a href="#">Hawali</a></li>
+          <li><a href="#">Maldives</a></li>
+          <li><a href="#">New York City</a></li>
+          <li><a href="#">kodaikanal</a></li>
+          <li><a href="#">Mussoorie</a></li>
+          <li><a href="#">Darjeeling</a></li>
+          <li><a href="#">Wayanad</a></li>
+          <li><a href="#">Mount Abu</a></li>
+          <li><a href="#">Shillong</a></li>
+          </ul>
+      </li>
+      <li><a href="#">Hot Deals</a></li>
+      <li><a href="#">Travel Guides</a></li>
+      <li><a href="#">Blogs</a>
+        <ul class="menu4"> 
+          <li><a href="#">Nomadic Matt</a></li>
+          <li><a href="#">The Blonde Abroad</a></li>
+          <li><a href="#">The Planet D</a></li>
+          <li><a href="#">TravelFreak</a></li>
+          <li><a href="#">Nomadic Boys</a></li>
+          <li><a href="#">Trey Ratcliff</a></li>
+          <li><a href="#">Gogobot</a></li>
+          </ul>
+      </li>
+      <li><button>SIGN UP</button></li>
+      <li><button>MY ACCOUNT</button></li>
+    </ul>
+  </div>
+  <div class="img">
+      <img src="fam.jpg" alt="image not found">
+         <div class="para">
+          <h2>Paris Hilton Hotel,Mumbai,India</h2>
+          <h4>Lorem ipsum dolar sit amet,consectelur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,Ut enim ad minim veniam.</h4>
+         </div> 
+         <div class="rs">
+          <p><b>99,084</b> Inclusive of food dinner</p>
+            </div>
+          <div class="form"> 
+            <form>
+                <fieldset>
+                <legend>Book Your Trip</legend>
+                <label>What?</label>
+                <input type="text">
+                <label>Where?</label>
+                <select>
+                <option>Hawali</option>
+                <option>New York</option>
+                <option>Maldives</option>
+                <option>Wayanad</option>
+                <option>Mount Abu</option>
+                <option>USA</option>
+                <option>Mussoorie</option>
+                <option>Darjeeling</option>
+                </select>
+                <label>when?</label>
+                <input type="date">
+                <label>who?</label>
+                <label>rooms</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <label>adults</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <label>children</label>
+                <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <a href="#" target="blank"><input type="submit" value="SEARCH" class="sub"></a>
+                </fieldset>
+            </form>
+          </div>
+  </div>
+  <div class="about">
+    <h1>Poupular Hotels</h1>
+      <div class="row">
+          <div class="col1-4">
+              <img src="seven.webp" alt="Hotel-Burj-Al-Arab image not found">
+          </div>
+          <div class="para1">
+            <p>Hotel-Burj-Al-Arab <button> &#8377;1,64,891</button></p>
+          </div>
+          <div class="col2-4">
+            <img src="jai.webp" alt="Oberoi-Rajvilas-Hotel-Jaipur image not found" >
+          </div>
+          <div class="para2">
+            <p>Oberoi-Rajvilas<button> &#8377;1,64,891</button></p>
+          </div>
+          <div class="col3-4">
+            <img src="mal.webp" alt="sonevajani image not found">
+          </div>
+          <div class="para3">
+            <p>sonevajani <button> &#8377;1,64,891</button></p>
+          </div>
+      </div>
+      <h2>Hot Deals</h2>
+      <div class="row1">
+          <div class="col4-6">
+            <img src="gift2.webp">
+          </div>
+          <div class="col5-6">
+            <img src="voc.jpg">
+          </div>
+      </div>
+      <div class="abtext">
+        <P><span>LATEST BLOGS</span> Best place to visit in world</P>
+      </div>
+  </div>
+  <div class="footer">
+      <table class="row1">
+        <tr><th><a href="#" target="blank">Company</a></th></tr>
+        <tr><td><a href="#" target="blank">About the company</a></td></tr>
+        <tr><td><a href="#" target="blank">Terms and Conditions</a></td></tr>
+        <tr><td><a href="#" target="blank">Pricavy Policy</a></td></tr>
+        <tr><td><a href="#" target="blank">Career</a></td></tr>
+      </table>
+      <table class="row2">
+        <tr><th><a href="#" target="blank">Customer Support</a></th></tr>
+        <tr><td><a href="#" target="blank">Contact</a></td></tr>
+        <tr><td><a href="#" target="blank">FAQ</a></td></tr>
+      </table>
+      <table class="row3">
+        <tr><th>Follow us</th></tr>
+        <tr><td>
+          <a href="#" target="blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+        </td></tr>
+      </table>
+      <table class="row4">
+        <tr><th> <a href="#" target="blank">Dont's miss our deals and offers</a></th></tr>
+      </table>
+      <div class="but">
+        <input type="email" class="b1" placeholder="Enter your email id" >
+        <a href="#" target="blank"><input type="submit" value="SUBSCRIBE" class="button"></a> 
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
